@@ -7,7 +7,7 @@ class TransactionController {
       const userId = req.user.id; // Authenticated user's ID
 
       const deposits = await db("transactions")
-        .join("accounts", "transactions.account_id", "accounts.id")
+        .join("accounts", "transactions.user_id", "accounts.user_id")
         .where("accounts.user_id", userId)
         .andWhere("transactions.type", "deposit")
         .select(
@@ -34,7 +34,7 @@ class TransactionController {
       const userId = req.user.id;
 
       const transfers = await db("transactions")
-        .join("accounts", "transactions.account_id", "accounts.id")
+        .join("accounts", "transactions.user_id", "accounts.user_id")
         .where("accounts.user_id", userId)
         .andWhere("transactions.type", "transfer")
         .select(

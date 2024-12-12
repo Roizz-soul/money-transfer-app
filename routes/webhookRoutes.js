@@ -4,6 +4,7 @@ const verifyWebhook = require("../middleware/verifyWebhook");
 
 const router = express.Router();
 
-router.post("/", verifyWebhook, WebhookController.handleDepositWebhook);
+// Webhook
+router.post("/", verifyWebhook, WebhookController.handleWebhook);
 
 module.exports = router;

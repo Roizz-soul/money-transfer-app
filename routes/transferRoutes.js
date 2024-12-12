@@ -4,6 +4,7 @@ const authMiddleware = require("../middleware/authMiddleware"); //auth middlewar
 
 const router = express.Router();
 
+// Post transfer
 router.post("/", authMiddleware, TransferController.initiateTransfer);
 
 module.exports = router;
