@@ -1,0 +1,32 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Core Resources",
+    "version": "unknown"
+  },
+  "servers": [
+    {
+      "url": "https://integrations.getravenbank.com/v1/"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "sec0": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization",
+        "x-bearer-format": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "sec0": []
+    }
+  ],
+  "paths": {},
+  "x-readme": {
+    "headers": []
+  },
+  "x-readme-fauxas": true
+}

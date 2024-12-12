@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "raven-atlas",
+      "source": "@raven-atlas/v1.0#q6geo3gl7pdtgoz",
+      "integrity": "sha512-tm49ShTVyNgo9yE4sKCV5SdHmi3oC5ocXR5R2ErUnM8H5V8SYBXPcsjRFU7X3pvqzfH0I5n8awGCyk/5YdPx1A==",
+      "installerVersion": "6.1.2"
+    }
+  ]
+}
